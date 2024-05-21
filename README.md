@@ -10,3 +10,5 @@ A basic idea for loading and rendering Tiled tilemaps for retro styled 2D games 
         - tile-size (width & heihgt in pixel)
         - tilesheet filename
         - calculates a position table for each tile of the tilesheet
+
+Feel free to modify it for your needs.

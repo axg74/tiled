@@ -5,7 +5,7 @@ Type TScreen
 	Global offsetX:Int
 	Global offsetY:Int
 	
-	' init graphics with a given resolution
+	' init graphics with a given resolution in fullscreen mode
 	Function Init(pWidth:Int, pHeight:Int)
 		width = pWidth
 		height = pHeight
@@ -40,13 +40,13 @@ Type TScreen
 		SetColor(255, 255, 255)
 	EndFunction
 	
-	' draw a sub-image-rect with correct offset and scale to the screen
+	' draw a sub-image-rect with correct offset and scaling to the screen
 	Function DrawSubImage(img:TImage, x:Int, y:Int, sourceX:Int, sourceY:Int, width:Int, height:Int)
 		DrawSubImageRect(img, ..
-						 Int(offsetX + Floor(x * scaleVal)), Int(offsetY + Floor(y * scaleVal)), ..
-						 width, height, ..
-						 sourceX, sourceY, ..
-						 width, height)
+					 Int(offsetX + Floor(x * scaleVal)), Int(offsetY + Floor(y * scaleVal)), ..
+					 width, height, ..
+					 sourceX, sourceY, ..
+					 width, height)
 	EndFunction
 	
 	' helper: draw a debug message to the screen

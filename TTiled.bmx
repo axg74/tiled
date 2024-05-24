@@ -63,7 +63,7 @@ Type TTiled
 					Local tileSourceY:Int = tilePosTab[(tileId - 1) * 2 + 1]
 					
 					TScreen.DrawSubImage(imgTileSheet, ..
-										 (x * tileWidth) - scrollX, y * tileHeight, ..
+										 (x * tileWidth) - scrollXwe, y * tileHeight, ..
 										 tileSourceX, tileSourceY,
 										 tileWidth, tileHeight)	
 				EndIf				
